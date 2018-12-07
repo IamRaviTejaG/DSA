@@ -1,5 +1,5 @@
 // OCCURRENCE COUNT using BINARY SEARCH
-// Date: 05 December 2018
+// Date: 06 December 2018
 // Author: Ravi Teja Gannavarapu
 // Implementation learnt from the Udemy Course on Data Structures & Algorithms in C++.
 // Find the course at: https://www.udemy.com/introduction-to-algorithms-and-data-structures-in-c/
