@@ -2,8 +2,7 @@
 // Date: 14 December 2018
 // Author: Ravi Teja Gannavarapu
 
-// Time Complexity -> Best: O(loglogn), Worst: O(n)
-// O(loglogn) is not a typo.
+// Time Complexity -> Best: O(log(logn)), Worst: O(n)
 
 #include<bits/stdc++.h>
 

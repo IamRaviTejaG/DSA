@@ -9,7 +9,7 @@ using namespace std;
 struct node
 {
 	int info;
-	struct node *next;
+	node *next;
 } *head;
 
 void insert(int newData, int location)

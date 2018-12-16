@@ -1,9 +1,9 @@
-// Arr -> BST
-// Date: 14 December 2018
+// Binary Tree - Depth First Search (In, Pre, Post)
+// Date: 16 December 2018
 // Author: Ravi Teja Gannavarapu
 
-// Uses the STL sort for sorting array. Time complexity: O(n*logn).
-// BST DFS (inorder) traversal takes O(n) time.
+// STL array sort: Time complexity -> O(n*logn).
+// Traversal Time Complexity -> O(n)
 
 #include<bits/stdc++.h>
 
@@ -40,6 +40,24 @@ void inorder(Node *node)
 	inorder(node->right);
 }
 
+void preorder(Node *node)
+{
+	if (node == NULL)
+		return;
+	cout<<node->data<<"->";
+	preorder(node->left);
+	preorder(node->right);
+}
+
+void postorder(Node *node)
+{
+	if (node == NULL)
+		return;
+	postorder(node->left);
+	postorder(node->right);
+	cout<<node->data<<"->";
+}
+
 int main()
 {
 	int n;
@@ -50,5 +68,10 @@ int main()
 	sort(arr, arr+n);
 	Node *a = arrToBst(arr, 0, n-1);
 	inorder(a);
+	cout<<endl;
+	preorder(a);
+	cout<<endl;
+	postorder(a);
+	cout<<endl;
 	return 0;
 }
